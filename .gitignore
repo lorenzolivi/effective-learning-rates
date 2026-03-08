@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Results (regenerate via run_all_robust.py)
+OLD_results/
+results_new/
+
+# Diagnostic / debug scripts
+debug_*.py
+
+# Session handoff (LLM chat artifacts)
+SESSION_HANDOFF.md
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/

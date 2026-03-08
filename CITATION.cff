@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Time-Scale Coupling Between States and Parameters in Recurrent Neural Networks"
+message: "If you use this code, please cite the paper."
+authors:
+  - family-names: Livi
+    given-names: Lorenzo
+date-released: 2025-08-01
+url: https://arxiv.org/abs/2508.12121
+type: software
+license: MIT
