@@ -212,7 +212,7 @@ def aggregate_and_plot(all_seed_results, seeds, task, checkpoints, lags,
             plt.legend()
             plt.tight_layout()
             fname = f"s2_Jacobian_{plot_type}_iter{it}_{task}.png"
-            plt.savefig(os.path.join(outdir, fname), dpi=600)
+            plt.savefig(os.path.join(outdir, fname), dpi=300)
             plt.close()
 
         # --- GradCov bar chart with error bars --- #
@@ -242,7 +242,7 @@ def aggregate_and_plot(all_seed_results, seeds, task, checkpoints, lags,
 
         fig.suptitle(f'Gradient covariance (task={task}, iter={it})', fontsize=10)
         fig.tight_layout()
-        plt.savefig(os.path.join(outdir, f"s2_gradcov_iter{it}_{task}.png"), dpi=600)
+        plt.savefig(os.path.join(outdir, f"s2_gradcov_iter{it}_{task}.png"), dpi=300)
         plt.close()
 
     # --- Save JSON summary --- #

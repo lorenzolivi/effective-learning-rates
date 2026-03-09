@@ -494,7 +494,7 @@ def main():
         plt.legend(loc='best')
         plt.tight_layout()
         fpath = os.path.join(args.out, f"s1_profile_{args.task}_{args.model}_iter{ckpt_iter}.png")
-        plt.savefig(fpath, dpi=600); plt.close()
+        plt.savefig(fpath, dpi=300); plt.close()
 
         # Append to heatmap rows (numpy)
         profile_rows.append(to_numpy(S_norm))
@@ -550,7 +550,7 @@ def main():
         plt.title(f'Effective LR profile heatmap (task={args.task}, model={args.model})')
         plt.tight_layout()
         fpath_hm = os.path.join(args.out, f"s1_heatmap_{args.task}_{args.model}.png")
-        plt.savefig(fpath_hm, dpi=600); plt.close()
+        plt.savefig(fpath_hm, dpi=300); plt.close()
         print(f"[SAVE] Heatmap -> {fpath_hm}")
 
     if len(slope_records) >= 2:
@@ -566,7 +566,7 @@ def main():
         plt.legend(loc='best')
         plt.tight_layout()
         fpath_sv = os.path.join(args.out, f"s1_slope_vs_iter_{args.task}_{args.model}.png")
-        plt.savefig(fpath_sv, dpi=600); plt.close()
+        plt.savefig(fpath_sv, dpi=300); plt.close()
         print(f"[SAVE] Slope-vs-iteration -> {fpath_sv}")
 
 

@@ -166,7 +166,7 @@ def plot_error_vs_eps(prefix, eps_list, errs, outdir):
     plt.legend()
     plt.tight_layout()
     path = os.path.join(outdir, f"{prefix}_error_vs_eps.png")
-    plt.savefig(path, dpi=600); plt.close()
+    plt.savefig(path, dpi=300); plt.close()
 
 def plot_C2_vs_eps(prefix, eps_list, errs, outdir):
     C2 = np.array(errs) / (np.array(eps_list)**2)
@@ -177,7 +177,7 @@ def plot_C2_vs_eps(prefix, eps_list, errs, outdir):
     plt.title(r'Normalized remainder $C_2(\varepsilon)$')
     plt.tight_layout()
     path = os.path.join(outdir, f"{prefix}_C2_vs_eps.png")
-    plt.savefig(path, dpi=600); plt.close()
+    plt.savefig(path, dpi=300); plt.close()
 
 def plot_ratio_hist(prefix, Rs, outdir):
     plt.figure()
@@ -187,7 +187,7 @@ def plot_ratio_hist(prefix, Rs, outdir):
     plt.title(r'Distribution of $r_j$')
     plt.tight_layout()
     path = os.path.join(outdir, f"{prefix}_ratio_hist.png")
-    plt.savefig(path, dpi=600); plt.close()
+    plt.savefig(path, dpi=300); plt.close()
 
 def plot_norms_timeseries(prefix, As, Bs, Rs, outdir):
     t = np.arange(len(As))
@@ -205,7 +205,7 @@ def plot_norms_timeseries(prefix, As, Bs, Rs, outdir):
     fig.suptitle(r'Per-step $\ell_2$ norms')
     fig.tight_layout()
     path = os.path.join(outdir, f"{prefix}_norms_timeseries.png")
-    fig.savefig(path, dpi=600); plt.close(fig)
+    fig.savefig(path, dpi=300); plt.close(fig)
 
 # ------------------------ Core ------------------------
 

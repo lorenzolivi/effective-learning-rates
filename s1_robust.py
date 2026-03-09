@@ -146,7 +146,7 @@ def aggregate_and_plot(all_seed_results, seeds, task, model_kind, checkpoints, T
         plt.title(f'Effective LR profile (task={task}, model={model_kind}, iter={it})')
         plt.legend(loc='best', fontsize=8)
         plt.tight_layout()
-        plt.savefig(os.path.join(outdir, f"s1_profile_iter{it}_{model_kind}.png"), dpi=600)
+        plt.savefig(os.path.join(outdir, f"s1_profile_iter{it}_{model_kind}.png"), dpi=300)
         plt.close()
 
     # --- Slope vs iteration with error bars --- #
@@ -164,7 +164,7 @@ def aggregate_and_plot(all_seed_results, seeds, task, model_kind, checkpoints, T
         plt.grid(True, alpha=0.3)
         plt.legend(loc='best')
         plt.tight_layout()
-        plt.savefig(os.path.join(outdir, f"s1_slope_vs_iter_{model_kind}.png"), dpi=600)
+        plt.savefig(os.path.join(outdir, f"s1_slope_vs_iter_{model_kind}.png"), dpi=300)
         plt.close()
 
     # --- Averaged heatmap --- #
@@ -181,7 +181,7 @@ def aggregate_and_plot(all_seed_results, seeds, task, model_kind, checkpoints, T
         plt.ylabel('Checkpoint (iteration)')
         plt.title(f'Effective LR profile heatmap (task={task}, model={model_kind})')
         plt.tight_layout()
-        plt.savefig(os.path.join(outdir, f"s1_heatmap_{model_kind}.png"), dpi=600)
+        plt.savefig(os.path.join(outdir, f"s1_heatmap_{model_kind}.png"), dpi=300)
         plt.close()
 
     # --- Save JSON summary --- #

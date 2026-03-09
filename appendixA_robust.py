@@ -177,7 +177,7 @@ def aggregate_and_plot(all_seed_results, seeds, gate_type, eps_list, T, outdir):
     plt.title(f'Truncation error vs $\\varepsilon$ ({gate_type} gate)')
     plt.legend()
     plt.tight_layout()
-    plt.savefig(os.path.join(outdir, f"{prefix}_robust_error_vs_eps.png"), dpi=600)
+    plt.savefig(os.path.join(outdir, f"{prefix}_robust_error_vs_eps.png"), dpi=300)
     plt.close()
 
     # --- C2 remainder vs eps (median + IQR) --- #
@@ -194,7 +194,7 @@ def aggregate_and_plot(all_seed_results, seeds, gate_type, eps_list, T, outdir):
     plt.title(f'Normalized remainder $C_2(\\varepsilon)$ ({gate_type} gate)')
     plt.legend()
     plt.tight_layout()
-    plt.savefig(os.path.join(outdir, f"{prefix}_robust_C2_vs_eps.png"), dpi=600)
+    plt.savefig(os.path.join(outdir, f"{prefix}_robust_C2_vs_eps.png"), dpi=300)
     plt.close()
 
     # --- Per-step norms timeseries (mean ± std bands) --- #
@@ -229,7 +229,7 @@ def aggregate_and_plot(all_seed_results, seeds, gate_type, eps_list, T, outdir):
                fontsize=8, bbox_to_anchor=(0.98, 0.98))
     fig.suptitle(f'Per-step $\\ell_2$ norms ({gate_type} gate)')
     fig.tight_layout()
-    fig.savefig(os.path.join(outdir, f"{prefix}_robust_norms_timeseries.png"), dpi=600)
+    fig.savefig(os.path.join(outdir, f"{prefix}_robust_norms_timeseries.png"), dpi=300)
     plt.close(fig)
 
     # --- Ratio histogram (overlaid from kept seeds) --- #
@@ -243,7 +243,7 @@ def aggregate_and_plot(all_seed_results, seeds, gate_type, eps_list, T, outdir):
     if n_kept <= 10:
         plt.legend(fontsize=7)
     plt.tight_layout()
-    plt.savefig(os.path.join(outdir, f"{prefix}_robust_ratio_hist.png"), dpi=600)
+    plt.savefig(os.path.join(outdir, f"{prefix}_robust_ratio_hist.png"), dpi=300)
     plt.close()
 
     # --- Summary CSV --- #

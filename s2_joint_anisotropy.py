@@ -57,7 +57,7 @@ def median_iqr(vals):
 
 def savefig(path):
     plt.tight_layout()
-    plt.savefig(path, dpi=600)
+    plt.savefig(path, dpi=300)
     plt.close()
     print(f"[saved] {path}")
 
