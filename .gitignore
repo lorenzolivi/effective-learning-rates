@@ -10,9 +10,7 @@ dist/
 build/
 
 # Results (regenerate via run_all_robust.py)
-OLD_results/
-results_new/
-results/
+results*/
 
 # Diagnostic / debug scripts
 debug_*.py
