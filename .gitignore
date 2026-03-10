@@ -8,14 +8,15 @@ __pycache__/
 *.egg-info/
 dist/
 build/
+.pytest_cache/
 
-# Results (regenerate via run_all_robust.py)
+# Results
 results*/
 
 # Diagnostic / debug scripts
 debug_*.py
 
-# Session handoff (LLM chat artifacts)
+# Session handoff
 SESSION_HANDOFF.md
 
 # Editor
@@ -24,3 +25,13 @@ SESSION_HANDOFF.md
 *~
 .vscode/
 .idea/
+
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Logs
+*.log
+logs/
